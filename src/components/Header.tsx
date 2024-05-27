@@ -44,7 +44,7 @@ export default function Header({ documentation }: Props) {
 
                         <span className="sr-only">nextconfig</span>
 
-                        <h1 className='font-semibold'>nextconfig</h1>
+                        <h1 className='font-semibold'>nextconfig.</h1>
                     </Link>
                 </div>
 

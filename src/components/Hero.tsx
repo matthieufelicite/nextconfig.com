@@ -17,12 +17,12 @@ export default function Hero() {
 
                 <div className="text-center">
 
-                    <h1 className="text-gradient text-4xl font-bold tracking-tight sm:text-6xl pb-1">
+                    <h1 className="text-gradient text-4xl font-bold tracking-tight sm:text-6xl pb-6">
 
                         Everything you need to get started with Next.js
                     </h1>
 
-                    <p className="mt-5 text-lg leading-8">
+                    <p className="text-lg leading-8">
 
                         Explore comprehensive documentation and essential tools to launch, manage, and succeed in your projects with Next.js.
                     </p>
