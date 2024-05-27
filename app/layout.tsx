@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Header";
 import { PropsWithChildren } from "react";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
@@ -22,8 +21,6 @@ export default function RootLayout({ children }: PropsWithChildren) {
 			<body className={inter.className + " h-full"}>
 
 				<ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-
-					<Navbar />
 
 					{children}
 				</ThemeProvider>

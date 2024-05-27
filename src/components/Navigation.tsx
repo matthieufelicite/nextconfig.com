@@ -3,11 +3,7 @@
 import Link from "next/link";
 import { buttonVariants } from "./ui/button";
 import { useState } from "react";
-
-const navigationItems = [
-
-    { name: 'Introduction', href: '/documentation/introduction', current: true }
-]
+import { navigationItems } from "../lib/constants";
 
 export default function Navigation() {
 
