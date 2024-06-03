@@ -1,12 +1,11 @@
 import Link from "next/link";
-import { ClipboardIcon } from "@heroicons/react/24/outline";
-import { Button } from "@/components/ui/button";
+import CodeSection from "@/components/CodeSection";
 
 export default function Page() {
 
     return (
 
-        <div className="flex-1 p-6">
+        <div className="flex-1 p-6 overflow-scroll">
 
             <p className="text-base font-semibold leading-7 text-gradient">Introduction</p>
 
@@ -20,26 +19,22 @@ export default function Page() {
 
             <p className="mt-2">For package management, we will use <Link href="https://pnpm.io/" target="_blank" rel="noopener noreferrer" className="underline">pnpm</Link>, which is an efficient alternative to npm with better performance in terms of disk space management and installation speed.</p>
 
-            <h2 className="mt-5 text-2xl font-semibold tracking-tight sm:text-3xl">Getting started</h2>
+            <h2 className="my-5 text-2xl font-semibold tracking-tight sm:text-3xl">Getting started</h2>
 
-            <pre className="flex items-center mt-2 bg-secondary text-background p-2 w-full rounded">
-                <code className="text-sm bg-secondary text-background p-2 w-full rounded">pnpm create next-app@latest</code>
+            <p className="mt-2">This docomentation shows one possible organisation for your code, the one who is the most simple and easy to understand but you can also use another one if you want.</p>
 
-                <Button variant="ghost" size="icon">
+            <div className="flex flex-col gap-4">
 
-                    <ClipboardIcon className="w-4 h-4" />
-                </Button>
-            </pre>
+                <CodeSection code="pnpm create next-app@latest --typescript --app" />
 
-            <pre className="flex items-center mt-2 bg-secondary text-background p-2 w-full rounded">
-                <code className="text-sm bg-secondary text-background p-2 w-full rounded">cd ./name</code>
+                <p className="mt-2">After this command, you will have to choose the name of your project, and the project will initialise.</p>
 
-                <Button variant="ghost" size="icon">
+                <CodeSection code="cd ./name" />
 
-                    <ClipboardIcon className="w-4 h-4" />
-                </Button>
-            </pre>
+                <CodeSection code="pnpm dev" />
 
+                <p className="mt-2">localhost:3000</p>
+            </div>
         </div>
     );
 }

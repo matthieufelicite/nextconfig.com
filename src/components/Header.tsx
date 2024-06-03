@@ -75,10 +75,12 @@ export default function Header({ documentation }: Props) {
 
                     <div className="flex items-center justify-between">
 
-                        <a href="#" className="-m-1.5 p-1.5">
+                        <Link href="/" className="-m-1.5 p-1.5">
 
-                            <span className="sr-only"></span>
-                        </a>
+                            <span className="sr-only">nextconfig</span>
+
+                            <h1 className='font-semibold'>nextconfig.</h1>
+                        </Link>
 
                         <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(false)}>
 
