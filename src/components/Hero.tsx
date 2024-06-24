@@ -29,7 +29,7 @@ export default function Hero() {
 
                     <div className="mt-10 flex items-center justify-center gap-x-6">
 
-                        <Link href="/documentation/introduction" className={buttonVariants({ variant: 'default', size: 'lg' })}>Documentation</Link>
+                        <Link href="/" className={buttonVariants({ variant: 'default', size: 'lg' })}>Bientôt disponible</Link>
 
                         <Link href="https://github.com/matthieufelicite/nextconfig.com" target="_blank" className={buttonVariants({ variant: 'outline', size: 'lg' })}>
 
