@@ -22,7 +22,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
 
 			<body className={inter.className + " h-full"}>
 
-				<ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+				<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
 
 					{children}
 				</ThemeProvider>
